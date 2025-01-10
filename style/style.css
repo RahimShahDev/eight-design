@@ -6,7 +6,7 @@ body{
 /* For Header Section  */
 .header{
     height: 100vh;
-    background: url('/images/image-header.jpg') no-repeat center center;
+    background: url('images/image-header.jpg') no-repeat center center;
     background-size: cover;
 }
 .nav-bar{
