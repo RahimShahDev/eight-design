@@ -1,0 +1,432 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* For Header Section  */
+.header{
+    height: 100vh;
+    background: url('/images/image-header.jpg') no-repeat center center;
+    background-size: cover;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 35px 65px;
+    justify-content: space-between;
+}
+.nav-bar-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#nav-bar-anchar-tag ul{
+    display: flex;
+    flex-direction: row;
+}
+#nav-bar-anchar-tag ul li{
+    list-style: none;
+    padding: 0px 18px;
+    color: white;
+    font-size: 1.15rem;
+    cursor: pointer;
+}
+#nav-bar-contact{
+    padding-left: 18px;
+}
+#nav-bar-contact button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: #c0d2d3;
+    border: 2px solid #c0d2d3;
+    cursor: pointer;
+}
+#header-content{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1.45rem;
+}
+
+/* For First and Second Row */
+.first-row,
+.second-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#first-row-text,
+#second-row-text{
+    width: 37%;
+    height: auto;
+    padding: 0px 65px;
+}
+#first-row-text h2,
+#second-row-text h2{
+    max-width: 250px;
+}
+#first-row-text p, 
+#second-row-text p{
+    max-width: 300px;
+    margin: 20px 0px;
+}
+#first-row-text a,
+#second-row-text a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+#first-row-image,
+#second-row-image{
+    width: 63%;
+    height: 400px;
+}
+#first-row-image img,
+#second-row-image img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+/* Third Row  */
+.third-row{
+    display: flex;
+    flex-direction: row;
+}
+#first-image{
+    position: relative;
+    width: 50%;
+    height: 400px;
+}
+#first-image img{
+    width: 100%;
+    height: 100%;
+}
+#first-image-text,
+#second-image-text{
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+#first-image-text h3,
+#second-image-text h3{
+    margin: 0px;
+}
+#second-image{
+    position: relative;
+    width: 50%;
+    height: 400px;
+}
+#second-image img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Clients Testimonials section   */
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 70px 0px;
+    justify-content: center;
+    align-items: center;
+}
+.testimonials h2{
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.testimonials-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.testimonials-card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 33%;
+    padding: 0px 30px;
+}
+.testimonials-card p{
+    max-width: 250px;
+    height: auto;
+    margin-top: 30px;
+}
+.testimonials-card img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.testimonials-card h5{
+    margin-bottom: 10px;
+}
+
+/* Images Section  */
+.images{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#image{
+    width: 25%;
+    height: auto;
+
+}
+#image img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer Section  */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    color: darkgreen;
+    padding: 15px 0px;
+}
+#footer-logo-img{
+    color: darkgreen;
+}
+#footer-nav-bar-links ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    margin-top: 0px;
+}
+#footer-nav-bar-links ul li{
+    padding: 0px 15px;
+    list-style: none;
+}
+#footer-nav-bar-links ul li a{
+    text-decoration: none;
+    color: darkgreen;
+
+}
+#footer-social-links a{
+    padding: 0px 10px;
+}
+
+
+/* Media Queries  */
+@media only screen and (max-width: 764px){
+    /* For First and Second Row */
+#first-row-text,
+#second-row-text{
+    padding: 0px 60px;
+}
+}
+
+
+@media only screen and (max-width:610px){
+    .header{
+        height: 70vh;
+    }
+    #nav-bar-anchar-tag ul li{
+        padding: 0px 10px;
+    }
+    #nav-bar-contact{
+        display: none;
+    }
+    #header-content{
+        font-size: 1.15rem;
+    }
+    #first-row-text,
+    #second-row-text{
+    padding: 0px 40px;
+}
+#first-row-text h2,
+#second-row-text h2{
+    max-width: 250px;
+    margin-top: 0px;
+}
+}
+
+
+@media only screen and (max-width: 464px){
+    .header{
+        height: 70vh;
+    }
+    #nav-bar-logo{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav-bar-links{
+        display: none;
+    }
+
+    #header-content{
+        font-size: 1rem;
+    }
+    #first-row-text,
+#second-row-text{
+    padding: 0px 20px;
+}
+#first-row-text h2,
+#second-row-text h2{
+    margin-bottom: 0px;
+}
+#first-row-text  p,
+#second-row-text p{
+    margin-top: 7px;
+}
+
+/* Clients Testimonials section   */
+.testimonials{
+    padding: 40px 0px;
+}
+.testimonials h2{
+    margin-bottom: 40px;
+    font-size: 1rem;
+}
+.testimonials-cards{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+.testimonials-card{
+    width: 35%;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    border: 1px solid black;
+    border-radius: 7px;
+
+}
+}
+
+
+@media only screen and (max-width: 412px){
+    .header{
+        height: 60vh;
+    }
+    /* For First and Second Row */
+.first-row{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0px;
+}
+.second-row-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+#first-row-text,
+#second-row-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0px;
+    width: 85%;
+    padding: 0px 15px;
+}
+#first-row-text h2,
+#second-row-text h2{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+#first-row-text p,
+#second-row-text p{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#first-row-image,
+#second-row-image{
+    width: 95%;
+    height: 250px;
+}
+
+/* Third Row  */
+.third-row{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#first-image{
+    position: relative;
+    width: 95%;
+    height: 350px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#first-image-text,
+#second-image-text{
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 10px;
+}
+#second-image{
+    position: relative;
+    width: 95%;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Clients Testimonials section   */
+.testimonials{
+    padding: 0px;
+}
+.testimonials h2{
+    margin-top: 30px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.testimonials-cards{
+    justify-content: center;
+}
+.testimonials-card{
+    width: 95%;
+    padding: 10px;
+
+}
+.testimonials-card p{
+    max-width: 350px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Images Section  */
+.images{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#image{
+    width: 95%;
+    height: auto;
+
+}
+#image img{
+    width: 100%;
+    height: 100%;
+}
+}
